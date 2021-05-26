@@ -191,7 +191,7 @@ if __name__ == '__main__':
                         choices=['DQN', 'Double', 'Dueling','DuelingDouble'],
                         default='DQN')
     parser.add_argument('--files', type=argparse.FileType('r'), nargs='+',
-                        help="""Filepath to the text file that comtains list of images.
+                        help="""Filepath to the text file that contains list of images.
                                 Each line of this file is a full path to an image scan.
                                 For (task == train or eval) there should be two input files ['images', 'landmarks']""")
     parser.add_argument('--saveGif', help='save gif image of the game',

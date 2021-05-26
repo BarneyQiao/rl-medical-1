@@ -494,6 +494,7 @@ class MedicalPlayer(gym.Env):
         :return: new state
         """
         # initialize screen with zeros - all background
+        # 初始化一个黑屏
         screen = np.zeros((self.screen_dims)).astype(self._image.data.dtype)
 
         # screen uses coordinate system relative to origin (0, 0, 0)
